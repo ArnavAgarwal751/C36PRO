@@ -5,10 +5,9 @@ var foodStock;
 var lastFed;
 
 function preload() {
-  dogImg1 = loadImage("images/dogImg.png");
-  dogImg2 = loadImage("images/dogImg1.png");
-  MilkImg = loadImage("images/Milk.png");
-  wait = loadImage("images/please wait.jpg")
+  dogImg1 = loadImage("images\dogImg.png");
+  dogImg2 = loadImage("images\dogImg1.png");
+  MilkImg = loadImage("images\Milk.png");
 }
 
 function setup() {
@@ -65,8 +64,6 @@ function draw() {
    }
 
   if(lastFed === undefined){
-    imageMode(CORNER)
-    image(wait, 0, 0, width, height);
     feed.position(18000,300);
     addFood.position(10100, 400);
   }
